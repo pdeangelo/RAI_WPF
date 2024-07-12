@@ -1,0 +1,44 @@
+﻿<Window x:Class="RAI_WPF.ClientEntityWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAI_WPF"
+        mc:Ignorable="d"
+        Title="Client Entities" Height="450" Width="800">
+    <Grid>
+        <Grid Background="LightGray" Width="800" Height="1000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="296*"/>
+                <ColumnDefinition Width="421*"/>
+                <ColumnDefinition Width="83*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Name="ErrorLabel" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="45" Margin="164,65,0,0" VerticalAlignment="Top" Width="330" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+
+            <Button Name="ClientEntitySaveButton" Content="SAVE" HorizontalAlignment="Left" Height="21" Margin="411,3,0,0" VerticalAlignment="Top" Width="83" Click="ClientEntitySaveButton_Click" Grid.Column="1" Grid.ColumnSpan="2" Background="White"/>
+            <Button Name="ClientEntityNewButton" Content="NEW" HorizontalAlignment="Left" Height="21" Margin="411,33,0,0" VerticalAlignment="Top" Width="83" Click="ClientEntityNewButton_Click" Grid.Column="1" Grid.ColumnSpan="2" Background="White"/>
+
+
+            <ComboBox Name="cmbClientC" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Client" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137"/>
+           
+            <ComboBox Name="cmbEntity" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbEntity_SelectionChanged"/>
+            <!--<TextBox Name="txtEntity" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" VerticalAlignment="Top" Width="120"/>-->
+            <Label Content="Entity" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="137"/>
+            
+            <TextBox Name="txtClientNumber" Grid.Column="1" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Client Number" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="137"/>
+
+            <TextBox Name="txtBank" Grid.Column="1" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Bank" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="137"/>
+
+            <TextBox Name="txtABA" Grid.Column="1" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="ABA" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="137"/>
+
+            <TextBox Name="txtAccount" Grid.Column="1" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Bank Account" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="137"/>
+
+        </Grid>
+    </Grid>
+</Window>

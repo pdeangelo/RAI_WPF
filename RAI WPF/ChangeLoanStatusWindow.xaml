@@ -1,0 +1,25 @@
+﻿<Window x:Class="RAI_WPF.ChangeLoanStatusWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAI_WPF"
+        mc:Ignorable="d"
+        Title="Change Loan Status" Height="450" Width="800">
+    <Grid>
+        <Grid Background="LightGray" Width="800" Height="1000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="296*"/>
+                <ColumnDefinition Width="421*"/>
+                <ColumnDefinition Width="83*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Name="ErrorLabel" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="45" Margin="10,120,0,0" VerticalAlignment="Top" Width="416" FontSize="24" FontWeight="Bold"/>
+
+            <Button Name="StatusSaveButton" Content="SAVE" HorizontalAlignment="Left" Height="21" Margin="411,1,0,0" VerticalAlignment="Top" Width="83" Click="StatusSaveButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+            <ComboBox Name="cmbLoanStatus" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Loan Status" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137"/>
+        </Grid>
+    </Grid>
+</Window>

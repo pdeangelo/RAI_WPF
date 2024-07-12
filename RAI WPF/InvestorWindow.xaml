@@ -1,0 +1,28 @@
+﻿<Window x:Class="RAI_WPF.InvestorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAI_WPF"
+        mc:Ignorable="d"
+        Title="Investors" Height="450" Width="800">
+    <Grid Background="LightGray" Width="800" Height="1000">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="296*"/>
+            <ColumnDefinition Width="421*"/>
+            <ColumnDefinition Width="83*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Name="ErrorLabel" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="45" Margin="164,65,0,0" VerticalAlignment="Top" Width="330" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+
+        <Button Name="InvestorSaveButton" Content="SAVE" HorizontalAlignment="Left" Height="21" Margin="411,1,0,0" VerticalAlignment="Top" Width="83" Click="InvestorSaveButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Name="InvestorNewButton" Content="NEW" HorizontalAlignment="Left" Height="21" Margin="411,33,0,0" VerticalAlignment="Top" Width="83" Click="InvestorNewButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+        <ComboBox Name="cmbInvestorI" HorizontalAlignment="Left" Height="23" Margin="174,13,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbInvestorI_SelectionChanged"/>
+        <TextBox Name="txtInvestorI" HorizontalAlignment="Left" Height="23" Margin="174,13,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Investor" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137"/>
+
+        <TextBox Name="txtCustodian" HorizontalAlignment="Left" Margin="174,41,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Custodian" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="137"/>
+    </Grid>
+</Window>

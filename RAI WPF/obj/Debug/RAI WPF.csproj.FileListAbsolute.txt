@@ -1,0 +1,102 @@
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csprojAssemblyReference.cache
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\MainWindow.g.cs
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\App.g.cs
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF_MarkupCompile.cache
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF_MarkupCompile.lref
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\RAI WPF.exe.config
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\RAI WPF.exe
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\RAI WPF.pdb
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\CashFlow.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Clearwater.DataAccess.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\ExcelFinancialFunctions.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Clearwater.Common.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\CashFlow.pdb
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Clearwater.DataAccess.pdb
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\ExcelFinancialFunctions.pdb
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\ExcelFinancialFunctions.xml
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\bin\Debug\Clearwater.Common.pdb
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\MainWindow.baml
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.g.resources
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI_WPF.Properties.Resources.resources
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.GenerateResource.cache
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.CoreCompileInputs.cache
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.CopyComplete
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.exe
+C:\Users\pdean\source\repos\RAI WPF\RAI WPF\obj\Debug\RAI WPF.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\RAI WPF.exe.config
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\RAI WPF.exe
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\RAI WPF.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\InvestorWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\MainWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ClientWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\App.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF_MarkupCompile.cache
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF_MarkupCompile.lref
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\InvestorWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\MainWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ClientWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.g.resources
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI_WPF.Properties.Resources.resources
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.GenerateResource.cache
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.CoreCompileInputs.cache
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csproj.CopyComplete
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.exe
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Clearwater.DataAccess.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Clearwater.Common.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\UserWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\UserWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\AccountingWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\AccountingWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\UnderwritingWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\UnderwritingWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ClientEntityWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ClientEntityWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\EPPlus.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\EPPlus.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.Doc.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.License.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.Pdf.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.mshtml.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.Doc.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.License.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Spire.Pdf.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Loans.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Loans.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ChangePasswordWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ChangePasswordWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\App.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Dashboard.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Navigation.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Dashboard.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Navigation.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ChangeLoanStatusWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\ChangeLoanStatusWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Shell.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.pdb
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\Microsoft.WindowsAPICodePack.ShellExtensions.xml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF_Content.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\AgingReportWindow.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\AgingReportWindow.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\CollectionsReport.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\CollectionsReport.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\SalesReport.g.cs
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\SalesReport.baml
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csprojAssemblyReference.cache

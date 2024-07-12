@@ -1,0 +1,38 @@
+﻿<Window x:Class="RAI_WPF.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RAI_WPF"
+        mc:Ignorable="d"
+        Title="Users" Height="450" Width="800">
+    <Grid>
+        <Grid Background="LightGray" Width="800" Height="1000">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="296*"/>
+                <ColumnDefinition Width="421*"/>
+                <ColumnDefinition Width="83*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Name="ErrorLabel" Grid.ColumnSpan="2" Content="" HorizontalAlignment="Left" Height="45" Margin="164,65,0,0" VerticalAlignment="Top" Width="330" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+
+            <Button Name="UsersSaveButton" Content="SAVE" HorizontalAlignment="Left" Height="21" Margin="411,1,0,0" VerticalAlignment="Top" Width="83" Click="UsersSaveButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <Button Name="UsersNewButton" Content="NEW" HorizontalAlignment="Left" Height="21" Margin="411,33,0,0" VerticalAlignment="Top" Width="83" Click="UsersNewButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
+
+            <ComboBox Name="cmbUserID" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbUserID_SelectionChanged"/>
+            <TextBox Name="txtUserID" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="User ID" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="137"/>
+
+            <ComboBox Name="cmbUserRole" Grid.Column="1" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="Role" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="137"/>
+            <CheckBox Name="chkAdministrator" Content="Administrator" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Width="125"/>
+            <Label Name="lblPassword" Content="User Password" Visibility="Hidden" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="137"/>
+            <PasswordBox Visibility="Hidden" x:Name="txtPassword" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,98,0,0" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtUserName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,37,0,0" VerticalAlignment="Top" Width="120"/>
+            <Label Content="User Name" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="137"/>
+            <Label Content="User Password" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="137"/>
+            <PasswordBox x:Name="txtCurrentPassword" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,118,0,0" VerticalAlignment="Top" Width="120"/>
+
+        </Grid>
+    </Grid>
+</Window>

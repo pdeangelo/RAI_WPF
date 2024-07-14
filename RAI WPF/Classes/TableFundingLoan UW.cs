@@ -5,8 +5,8 @@ using System.Text;
 using Clearwater.DataAccess;
 using System.Data;
 using System.Data.SqlClient;
-
-    public class TableFundingLoanUW
+using log4net;
+public class TableFundingLoanUW
     {
         #region Constants
         /// <summary>
@@ -14,11 +14,13 @@ using System.Data.SqlClient;
         /// </summary>
         internal const String SP_TRANSACTION_SELECT = "TableFundingLoansUW_SEL";
         internal const String SP_TRANSACTION_SAVE = "TableFundingLoansUW_AddEdit";
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        /// <summary>
-        /// Define all the procedure parameter fields as a constant here
-        /// </summary>
-        internal const String Param_LoanUWID = "LoanUWID";
+
+    /// <summary>
+    /// Define all the procedure parameter fields as a constant here
+    /// </summary>
+    internal const String Param_LoanUWID = "LoanUWID";
         internal const String Param_LoanID = "LoanID";
         internal const String Param_LoanUW10031008LoanApplication = "LoanUW10031008LoanApplication";
         internal const String Param_LoanUWAllongePromissoryNote = "LoanUWAllongePromissoryNote";
@@ -94,6 +96,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 
@@ -346,6 +349,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
             finally
@@ -423,6 +427,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 errMsg.Append(ex.Message);
                 result.Message = errMsg.ToString();
                 result.Status = false;

@@ -17,6 +17,7 @@ using System.Collections.ObjectModel;
 using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using log4net;
 
 namespace RAI_WPF
 {
@@ -26,6 +27,7 @@ namespace RAI_WPF
     /// </summary>
     public partial class SalesReport : Window
     {
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public SalesReport()
         {
@@ -220,6 +222,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
             }

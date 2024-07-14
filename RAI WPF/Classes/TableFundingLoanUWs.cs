@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using log4net;
 
 
 using Clearwater.DataAccess;
@@ -31,7 +32,8 @@ using Clearwater.DataAccess;
         #endregion
 
         #region Member Variables
-      
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         /// <summary>
 
         #endregion
@@ -106,6 +108,7 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 

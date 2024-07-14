@@ -14,7 +14,7 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections.ObjectModel;
-
+using log4net;
 
 namespace RAI_WPF
 {
@@ -23,6 +23,8 @@ namespace RAI_WPF
     /// </summary>
     public partial class AccountingWindow : Window
     {
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         int LoanID;
         TableFundingLoanFunding loanFunding;
         TableFundingFees loanFees;
@@ -47,7 +49,7 @@ namespace RAI_WPF
             {                
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
-
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
         }
         private void LoadData()
@@ -79,6 +81,7 @@ namespace RAI_WPF
             {                
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
         }
@@ -225,6 +228,7 @@ namespace RAI_WPF
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
                 Mouse.OverrideCursor = null;
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using Clearwater.DataAccess;
 using System.Data.SqlClient;
+using log4net;
 
-
-    public class TableFundingClient
+public class TableFundingClient
     {
         #region Constants
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         /// <summary>
         /// Define all the procedure name here
         /// </summary>
@@ -126,6 +127,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);    
                 throw ex;
             }
             finally
@@ -277,6 +279,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 errMsg.Append(ex.Message);
                 result.Message = errMsg.ToString();
                 result.Status = false;

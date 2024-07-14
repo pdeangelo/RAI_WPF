@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
-
+using log4net;
 
 using Clearwater.DataAccess;
 
@@ -25,23 +25,24 @@ using Clearwater.DataAccess;
     public class TableFundingClients: List<TableFundingClient>
       {
 
-        #region Constants
+    #region Constants
+    private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        #endregion
-        #region Private Members
-        #endregion
+    #endregion
+    #region Private Members
+    #endregion
 
-        #region Member Variables
-      
-        /// <summary>
+    #region Member Variables
 
-        #endregion
-        #region Constructor
+    /// <summary>
 
-        /// <summary>
-        /// Constructor. Initialize the class member variables
-        /// </summary>
-        public TableFundingClients()
+    #endregion
+    #region Constructor
+
+    /// <summary>
+    /// Constructor. Initialize the class member variables
+    /// </summary>
+    public TableFundingClients()
         {
             //intialize the member variables
             Initialize();
@@ -90,6 +91,7 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 

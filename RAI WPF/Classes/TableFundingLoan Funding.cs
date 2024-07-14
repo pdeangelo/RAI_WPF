@@ -5,8 +5,8 @@ using System.Text;
 using Clearwater.DataAccess;
 using System.Data;
 using System.Data.SqlClient;
-
-    public class TableFundingLoanFunding
+using log4net;
+public class TableFundingLoanFunding
     {
         #region Constants
         /// <summary>
@@ -14,6 +14,7 @@ using System.Data.SqlClient;
         /// </summary>
         internal const String SP_TRANSACTION_SELECT = "TableFundingLoanFunding_Sel";
         internal const String SP_TRANSACTION_SAVE = "TableFundingLoanFunding_AddEdit";
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         /// <summary>
         /// Define all the procedure parameter fields as a constant here
@@ -67,6 +68,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 
@@ -209,6 +211,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
             finally
@@ -272,6 +275,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 errMsg.Append(ex.Message);
                 result.Message = errMsg.ToString();
                 result.Status = false;

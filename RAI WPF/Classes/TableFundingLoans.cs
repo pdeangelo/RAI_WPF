@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using log4net;
 
 
 using Clearwater.DataAccess;
@@ -24,6 +25,7 @@ using Clearwater.DataAccess;
     /// --------------------------------------------------
     public class TableFundingLoans: List<TableFundingLoan>
       {
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Constants
 
@@ -32,16 +34,16 @@ using Clearwater.DataAccess;
         #endregion
 
         #region Member Variables
-      
+
         /// <summary>
 
         #endregion
         #region Constructor
 
-        /// <summary>
-        /// Constructor. Initialize the class member variables
-        /// </summary>
-        public TableFundingLoans()
+    /// <summary>
+    /// Constructor. Initialize the class member variables
+    /// </summary>
+    public TableFundingLoans()
         {
             //intialize the member variables
             Initialize();
@@ -112,6 +114,7 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 
@@ -143,6 +146,7 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 

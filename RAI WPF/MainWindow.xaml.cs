@@ -20,7 +20,7 @@ using OfficeOpenXml;
 using OfficeOpenXml.Style;
 using Spire.Doc;
 using Microsoft.Win32;
-
+using log4net;
 namespace RAI_WPF
 {
     /// <summary>
@@ -28,11 +28,12 @@ namespace RAI_WPF
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public MainWindow()
         {
-          
+            log4net.Config.XmlConfigurator.Configure();
+            log.Info("User Logon");
             InitializeComponent();
             
 
@@ -73,6 +74,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
         }
 

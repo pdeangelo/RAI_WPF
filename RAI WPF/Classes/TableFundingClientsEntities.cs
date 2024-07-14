@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
-
+using log4net;
 
 using Clearwater.DataAccess;
 
@@ -23,7 +23,7 @@ using Clearwater.DataAccess;
     /// --------------------------------------------------
     public class TableFundingClientEntities: List<TableFundingClientEntity>
       {
-
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         #region Constants
 
         #endregion
@@ -31,7 +31,7 @@ using Clearwater.DataAccess;
         #endregion
 
         #region Member Variables
-      
+
         /// <summary>
 
         #endregion
@@ -41,29 +41,29 @@ using Clearwater.DataAccess;
         /// Constructor. Initialize the class member variables
         /// </summary>
         public TableFundingClientEntities()
-        {
-            //intialize the member variables
-            Initialize();
-            //LoadData();
-        }
-        public TableFundingClientEntities(int clientID)
-        {
-            //intialize the member variables
-            Initialize();
-            LoadData(clientID);
-        }
+            {
+                //intialize the member variables
+                Initialize();
+                //LoadData();
+            }
+            public TableFundingClientEntities(int clientID)
+            {
+                //intialize the member variables
+                Initialize();
+                LoadData(clientID);
+            }
 
-        ///// <summary>
-        ///// Constructor. Initialize the class member variables
-        ///// </summary>
-        //public TableFundingClients(int issuerId, int year)
-        //{
-        //    //intialize the member variables
-        //    Initialize();
-        //    LoadData(issuerId, year);
-        //}
+            ///// <summary>
+            ///// Constructor. Initialize the class member variables
+            ///// </summary>
+            //public TableFundingClients(int issuerId, int year)
+            //{
+            //    //intialize the member variables
+            //    Initialize();
+            //    LoadData(issuerId, year);
+            //}
 
-        #endregion
+            #endregion
 
         #region Public  Methods
 
@@ -91,6 +91,7 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
 
@@ -106,7 +107,9 @@ using Clearwater.DataAccess;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
+
             }
 
         }

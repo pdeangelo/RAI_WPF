@@ -22,7 +22,7 @@ using Spire.Doc;
 using Microsoft.Win32;
 using Microsoft.WindowsAPICodePack.Dialogs;
 using Clearwater.DataAccess;
-
+using log4net;
 namespace RAI_WPF
 {
     /// <summary>
@@ -42,6 +42,7 @@ namespace RAI_WPF
         public static bool needsRefresh;
         public int test = 1;
         //protected static bool needsRefresh = false;
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
 
@@ -86,6 +87,7 @@ namespace RAI_WPF
             {                
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
         }
@@ -123,7 +125,7 @@ namespace RAI_WPF
             {                
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
-
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
         }
 
@@ -144,6 +146,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -165,6 +168,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -186,7 +190,8 @@ namespace RAI_WPF
             catch (Exception ex)
             {
                ErrorLabel.Content = ex.Message;
-                ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+               ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+               log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -215,6 +220,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -255,6 +261,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
         }
@@ -275,6 +282,7 @@ namespace RAI_WPF
             {
                ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -294,6 +302,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
         }
@@ -344,6 +353,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -426,6 +436,7 @@ namespace RAI_WPF
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 
                 Mouse.OverrideCursor = null;
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
             Mouse.OverrideCursor = null;
@@ -467,6 +478,7 @@ namespace RAI_WPF
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 
                 Mouse.OverrideCursor = null;
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
             Mouse.OverrideCursor = null;
@@ -514,6 +526,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
         }
@@ -531,6 +544,7 @@ namespace RAI_WPF
             {                
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -550,6 +564,7 @@ namespace RAI_WPF
 
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -568,6 +583,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }       
         }
 
@@ -584,6 +600,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }       
 
         }
@@ -598,6 +615,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }       
         }
 
@@ -869,6 +887,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
         }
 
@@ -1368,6 +1387,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }       
 
         }
@@ -1610,6 +1630,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
         }
@@ -1816,6 +1837,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
 
@@ -2105,6 +2127,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
         }
@@ -2468,6 +2491,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
 
         }
@@ -2497,6 +2521,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
             }
         }
 
@@ -2536,6 +2561,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 
@@ -2556,6 +2582,7 @@ namespace RAI_WPF
             {
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
 
             }
 

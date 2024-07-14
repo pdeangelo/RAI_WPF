@@ -5,8 +5,8 @@ using System.Text;
 using Clearwater.DataAccess;
 using System.Data;
 using System.Data.SqlClient;
-
-    public class TableFundingEntity
+using log4net;
+public class TableFundingEntity
     {
         #region Constants
         /// <summary>
@@ -24,16 +24,17 @@ using System.Data.SqlClient;
         internal const String Param_ABA = "ABA";
         internal const String Param_Account = "Account";
 
-        #endregion
+    #endregion
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         #region Member Variables
 
         private int _entityID;
-        private String _entityName;
-        private String _entityBank;
-        private String _aba;
-        private String _account;
-        #endregion
+            private String _entityName;
+            private String _entityBank;
+            private String _aba;
+            private String _account;
+            #endregion
 
         #region Constructor
         public TableFundingEntity()
@@ -89,6 +90,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
             finally
@@ -181,6 +183,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 errMsg.Append(ex.Message);
                 result.Message = errMsg.ToString();
                 result.Status = false;

@@ -100,3 +100,5 @@ C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\Collectio
 C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\SalesReport.g.cs
 C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\SalesReport.baml
 C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\obj\Debug\RAI WPF.csprojAssemblyReference.cache
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\log4net.dll
+C:\Users\pdean\OneDrive\Documents\GitHub\RAI\RAI WPF\RAI WPF\bin\Debug\log4net.xml

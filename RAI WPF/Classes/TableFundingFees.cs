@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using Clearwater.DataAccess;
 using System.Data.SqlClient;
+using log4net;
 
-
-    public class TableFundingFees
+public class TableFundingFees
     {
         #region Constants
         /// <summary>
@@ -14,11 +14,12 @@ using System.Data.SqlClient;
         /// </summary>
         internal const String SP_TRANSACTION_SELECT = "TableFundingFees_Sel";
         internal const String SP_TRANSACTION_SAVE = "TableFundingFees_AddEdit";
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        /// <summary>
-        /// Define all the procedure parameter fields as a constant here
-        /// </summary>
-        internal const String Param_LoanID = "LoanID";
+    /// <summary>
+    /// Define all the procedure parameter fields as a constant here
+    /// </summary>
+    internal const String Param_LoanID = "LoanID";
         internal const String Param_MinimumInterest = "MinimumInterest";
         internal const String Param_ClientPrimeRate = "ClientPrimeRate";
         internal const String Param_ClientPrimeRateSpread = "ClientPrimeRateSpread";
@@ -140,6 +141,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 throw ex;
             }
             finally
@@ -305,6 +307,7 @@ using System.Data.SqlClient;
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 errMsg.Append(ex.Message);
                 result.Message = errMsg.ToString();
                 result.Status = false;

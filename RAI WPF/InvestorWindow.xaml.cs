@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections.ObjectModel;
+using log4net;
 
 namespace RAI_WPF
 {
@@ -23,6 +24,8 @@ namespace RAI_WPF
     public partial class InvestorWindow : Window
     {
         DataSet investors;
+        private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public InvestorWindow()
         {
             InitializeComponent();
@@ -62,7 +65,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
-
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 
@@ -85,6 +88,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
 
             }
@@ -115,6 +119,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 
@@ -133,6 +138,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 
@@ -149,6 +155,7 @@ namespace RAI_WPF
             }
             catch (Exception ex)
             {
+                log.Error("Error in logon - Exception Message:" + ex.Message + " Exception: " + ex);
                 ErrorLabel.Content = ex.Message;
                 ErrorLabel.Foreground = new SolidColorBrush(Colors.Red);
 

@@ -2573,7 +2573,7 @@ namespace RAI_WPF
             ErrorLabel.Content = "";
             try
             {
-                System.Diagnostics.Process.Start("https://app.powerbi.com/view?r=eyJrIjoiZmU4MDdjZjUtOTFmZC00ZDU2LTgxYWMtMTk1NTBhZDQ1MjMxIiwidCI6IjcyOWQxY2U4LTUxN2EtNGJjYi1iY2JlLTgzYThmNzJkYzMzMSIsImMiOjF9");
+                System.Diagnostics.Process.Start("https://app.powerbi.com/view?r=eyJrIjoiZTYxNTc0YTEtOGFhNi00NmIzLWE2MmQtODQ3NDM4Yzc1NzU4IiwidCI6IjcyOWQxY2U4LTUxN2EtNGJjYi1iY2JlLTgzYThmNzJkYzMzMSIsImMiOjF9&pageName=ReportSection");
                 //Dashboard dwindow = new Dashboard();
                 //dwindow.Show();
             }

@@ -33,7 +33,6 @@ namespace RAI_WPF
         public MainWindow()
         {
             log4net.Config.XmlConfigurator.Configure();
-            log.Info("User Logon");
             InitializeComponent();
             
 
@@ -47,6 +46,7 @@ namespace RAI_WPF
                 string userName = txtUser.Text;
                 string password = txtPassword.Password;
 
+                log.Info("User Logon - " + txtUser.Text);
                 AppUser user = new AppUser(userName);
 
                 MyVariables.user = user;

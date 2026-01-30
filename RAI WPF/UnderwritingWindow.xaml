@@ -48,8 +48,10 @@
             <Label Content="Property Address" HorizontalAlignment="Left" Margin="18,270,0,0" VerticalAlignment="Top" Width="137" Height="28" Grid.ColumnSpan="2"/>
 
             <Label Content="State" HorizontalAlignment="Left" Margin="330,270,0,0" VerticalAlignment="Top" Width="196" Height="28" Grid.Column="4"/>
-            <ComboBox x:Name="cmbState" HorizontalAlignment="Left" Height="23" Margin="385,270,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="4"/>
-            
+            <ComboBox x:Name="cmbState" HorizontalAlignment="Left" Height="23" Margin="388,270,0,0" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" Grid.Column="4"/>
+            <Label Content="# of Properties" HorizontalAlignment="Left" Margin="273,310,0,0" VerticalAlignment="Top" Width="103" Height="28" Grid.Column="4"/>
+            <TextBox x:Name="txtNumberOfProperties" Grid.Column="4" HorizontalAlignment="Left" Height="25" Margin="388,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Grid.ColumnSpan="2"/>
+
             <Label Content="Pre Closing" HorizontalAlignment="Left" Margin="18,330,0,0" VerticalAlignment="Top" Width="137" FontWeight="Bold" Height="28" Grid.ColumnSpan="2"/>
 
             <CheckBox x:Name="chkLoanApplication" HorizontalAlignment="Left" Height="23" Margin="18,360,0,0" VerticalAlignment="Top" Width="120" Grid.Column="3" Grid.ColumnSpan="2"/>
@@ -129,7 +131,7 @@
             <Button x:Name="UnderwritingPrintButton" Content="PRINT" HorizontalAlignment="Left" Height="21" Margin="102,53,0,0" VerticalAlignment="Top" Width="83" Click="UnderwritingPrintButton_Click"  Grid.Column="5"/>
             <DatePicker x:Name="dtDateDepositedInEscrow" HorizontalAlignment="Left" Height="35" Margin="331,14,0,0" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="4" Grid.ColumnSpan="2"/>
             <Label Content="Date Deposited in Escrow" HorizontalAlignment="Left" Margin="136,14,0,0" VerticalAlignment="Top" Width="190" Height="28" Grid.Column="4"/>
-
+           
         </Grid>
     </ScrollViewer>
 </Window>

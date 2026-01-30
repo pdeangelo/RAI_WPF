@@ -108,6 +108,7 @@ namespace RAI_WPF
 
                 cmbClient.SelectedValue = Loan.LoanClientID;
                 txtLoanNumber.Text = Loan.LoanNumber;
+                txtNumberOfProperties.Text = Loan.LoanNumberOfProperties.ToString();
                 txtCustomerName.Text = Loan.LoanMortgagee;
                 txtBusinessName.Text = Loan.LoanMortgageeBusiness;
                 cmbLoanType.SelectedValue = Loan.LoanType;
@@ -258,6 +259,7 @@ namespace RAI_WPF
                 Loan.LoanType = Convert.ToInt32(cmbLoanType.SelectedValue);
                 Loan.LoanDwellingType = Convert.ToInt32(cmbLoanDwellingType.SelectedValue);
                 Loan.State = Convert.ToInt32(cmbState.SelectedValue);
+                Loan.LoanNumberOfProperties = Convert.ToInt32(txtNumberOfProperties.Text);
 
                 Loan.LoanNumber = txtLoanNumber.Text;
                 Loan.LoanMortgagee = txtCustomerName.Text;

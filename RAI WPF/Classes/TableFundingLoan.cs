@@ -50,6 +50,7 @@ public class TableFundingLoan
         internal const String Param_DateDepositedInEscrow = "DateDepositedInEscrow";
         internal const String Param_State = "State";
         internal const String Param_StateName = "StateName";
+        internal const String Param_LoanNumberOfProperties = "LoanNumberOfProperties";
 
     #endregion
 
@@ -70,6 +71,7 @@ public class TableFundingLoan
         private int _loanUpdateUserID;
         private string _loanStatus;
         private int _state;
+        private int _loanNumberOfProperties;
         private string _stateName;
         private string _loanNumber;
         private DateTime? _loanFundingDate;
@@ -143,6 +145,11 @@ public class TableFundingLoan
         {
             get { return _state; }
             set { _state = value; }
+        }
+        public int LoanNumberOfProperties
+    {
+            get { return _loanNumberOfProperties; }
+            set { _loanNumberOfProperties = value; }
         }
         public string StateName
         {
@@ -363,6 +370,7 @@ public class TableFundingLoan
             _loanMortgageAmount = 0;
             _loanInterestRate = 0;
             _loanAdvanceRate = 0;
+            _loanNumberOfProperties = 1;
             _loanUW = new TableFundingLoanUW();
         }
         private void LoadData(int loanID)
@@ -401,6 +409,7 @@ public class TableFundingLoan
                             _loanNumber = dr[Param_LoanNumber].ToString();
 
                             _state = (int)dr[Param_State];
+                            _loanNumberOfProperties = (int)dr[Param_LoanNumberOfProperties];
                             _stateName = dr[Param_StateName].ToString();
                             if (dr[Param_LoanFundingDate].ToString().Length == 0)
                                 _loanFundingDate = null;
@@ -485,9 +494,10 @@ public class TableFundingLoan
                 parameters.Add(new Parameter(Param_LoanMortgageeBusiness, _loanMortgageeBusiness));
                 parameters.Add(new Parameter(Param_LoanDwellingType, _loanDwellingType));
                 parameters.Add(new Parameter(Param_State, _state));
+                parameters.Add(new Parameter(Param_LoanNumberOfProperties, _loanNumberOfProperties));
 
-                //Set the Exception Message  
-                errMsg.Append("Error occured while saving the Loan for  -:");
+            //Set the Exception Message  
+            errMsg.Append("Error occured while saving the Loan for  -:");
                 errMsg.Append("Loan Name:" + LoanID.ToString());
                 result.Status = true;
 

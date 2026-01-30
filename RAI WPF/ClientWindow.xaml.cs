@@ -295,7 +295,7 @@ namespace RAI_WPF
         public string FormatPcnt(string input)
         {
             double no = double.Parse(input.ToString());
-            return no.ToString("0.00%");
+            return no.ToString("0.000%");
         }
     }
 }
